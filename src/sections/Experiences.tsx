@@ -1,7 +1,7 @@
 const Experiences = () => {
   return (
     <section id='exp' className='section-container'>
-      <span>EXPERIENCE</span>
+      <h1 className='section-h1'>Experiences</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis
         delectus fugiat, odio, beatae voluptatibus accusantium ex cupiditate

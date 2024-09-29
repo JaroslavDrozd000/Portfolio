@@ -6,7 +6,7 @@ import ProfilePicture from '../components/ProfilePicture';
 const Contact = () => {
   return (
     <section id='contact' className='section-container'>
-      <h1 className='section-h1'>CONTACT</h1>
+      <h1 className='section-h1 text-center'>Contact</h1>
       <div className='flex max-md:flex-col items-center justify-evenly text-white text-lg'>
         <div className='flex flex-col gap-5 justify-evenly max-md:mb-10'>
           <div className='flex items-center gap-5'>

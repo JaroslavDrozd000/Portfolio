@@ -44,7 +44,7 @@ body,
     @apply w-full max-w-screen-2xl mx-auto p-5 md:p-10;
   }
   .section-h1 {
-    @apply text-4xl max-sm:text-2xl text-primary font-serif font-extrabold mb-5;
+    @apply text-4xl max-sm:text-2xl text-primary font-serif font-extrabold mb-10;
   }
   .text-size {
     @apply text-lg max-sm:text-sm;

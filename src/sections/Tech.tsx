@@ -1,7 +1,7 @@
 const Tech = () => {
   return (
     <section id='tech' className='section-container'>
-      <span>TECHNOLOGIES</span>
+      <h1 className='section-h1'>Technologies</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis
         delectus fugiat, odio, beatae voluptatibus accusantium ex cupiditate

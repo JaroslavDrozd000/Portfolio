@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section id='about' className='section-container'>
       <h1 id='about' className='section-h1'>
-        ABOUT
+        Introduction
       </h1>
       <div className='flex max-md:flex-col gap-5 justify-center'>
         <p className='max-w-96 text-size'>
@@ -15,15 +15,15 @@ const About = () => {
           skill set, including learning and mastering new front-end
           technologies.
         </p>
-        <div>
+        <div className='max-w-96'>
           <span className='text-primary text-[1.5rem] font-bold font-serif'>
             Education
           </span>
+          <p className='text-neutral-500 text-size'>Bachelor's Degree</p>
           <p className='text-size'>
             Faculty of Informatics and Information Technologies STU
           </p>
-          <p className='text-neutral-500 text-size'>Bachelor's Degree</p>
-          <p>Bratislava, Slovak Republic</p>
+          <p className='text-size'>Bratislava, Slovak Republic</p>
           <p className='mt-5 text-size'>2020 - 2024</p>
         </div>
       </div>

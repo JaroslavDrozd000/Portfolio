@@ -4,9 +4,9 @@ const Hero = () => {
   return (
     <section
       id='hero'
-      className='section-container flex flex-col pt-24 min-h-screen justify-center items-center gap-10'
+      className='section-container flex flex-col pt-24 md:pt-40 min-h-screen justify-center items-center gap-10'
     >
-      <h1 className='w-full text-[3rem] sm:text-[5rem] md:text-[8rem] xl:text-[10rem] leading-[3rem] sm:leading-[4rem] md:leading-[7rem] xl:leading-[9rem] flex flex-col'>
+      <h1 className='w-full text-[3rem] sm:text-[5rem] md:text-[8rem] xl:text-[10rem] leading-[3rem] sm:leading-[5rem] md:leading-[7rem] xl:leading-[9rem] flex flex-col'>
         <span className='font-extralight'>Frontend</span>
         <span className='text-center text-primary font-extrabold font-serif'>
           Developer

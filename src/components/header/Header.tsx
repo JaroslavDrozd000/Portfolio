@@ -35,7 +35,7 @@ const Header = () => {
     <header>
       <nav
         className={`fixed ${
-          showNavbar ? 'top-5' : '-top-56'
+          showNavbar ? 'top-5 md:top-10' : '-top-56'
         } left-0 w-full flex items-center justify-center transition-all ease-in-out duration-500 z-40`}
       >
         <ul className='relative hidden md:flex items-center px-5 gap-8 w-fit mx-auto h-16 bg-white rounded-full border-4 border-white ring-2 ring-primary ring-opacity-50'>

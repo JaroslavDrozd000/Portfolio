@@ -1,4 +1,4 @@
-import { useState, MouseEvent } from 'react';
+import { useState, MouseEvent, useEffect, useRef } from 'react';
 
 const NavLinks = () => {
   const [navLinks] = useState<
@@ -34,9 +34,22 @@ const NavLinks = () => {
   ]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [position, setPosition] = useState<{ width: string; left: string }>({
-    width: '87px',
+    width: '50px',
     left: '0px',
   });
+
+  const firstLinkRef = useRef<HTMLLIElement | null>(null);
+
+  useEffect(() => {
+    // Set position of the first li (Home) on initial load
+    if (firstLinkRef.current) {
+      const { offsetWidth, offsetLeft } = firstLinkRef.current;
+      setPosition({
+        width: `${offsetWidth + 40}px`,
+        left: `${offsetLeft - 20}px`,
+      });
+    }
+  }, []);
 
   const handleLinkClick = (event: MouseEvent<HTMLLIElement>, index: number) => {
     const { offsetWidth, offsetLeft } = event.target as HTMLLIElement;
@@ -62,6 +75,7 @@ const NavLinks = () => {
       {navLinks.map((link, index) => (
         <li
           key={link.id}
+          ref={index === 0 ? firstLinkRef : null}
           className={`cursor-pointer h-full flex font-sans items-center ${
             activeIndex === index ? 'text-white' : 'text-black'
           } transition-colors ease-in-out duration-500 select-none z-10`}

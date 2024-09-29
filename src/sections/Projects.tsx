@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <section id='projects' className='section-container'>
-      <span>PROJECTS</span>
+      <h1 className='section-h1'>Projects</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis
         delectus fugiat, odio, beatae voluptatibus accusantium ex cupiditate
