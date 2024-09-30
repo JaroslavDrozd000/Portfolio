@@ -16,6 +16,7 @@ import { IoIosCall } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { IconType } from 'react-icons';
 import { FaHome, FaLinkedin, FaGithub } from 'react-icons/fa';
+import fiitLogo from '../assets/fiit.png';
 
 export const navLinks: {
   name: string;
@@ -92,5 +93,27 @@ export const contactList: {
     Icon: FaGithub,
     title: 'GitHub',
     onClick: () => window.open('https://github.com/JaroslavDrozd000', '_blank'),
+  },
+];
+
+export const experienceList: {
+  img: string;
+  job: string;
+  where: string;
+  duration: string;
+  description: string[];
+}[] = [
+  {
+    img: fiitLogo,
+    job: 'Frontend Developer',
+    where: 'Faculty of Informatics and Information Technologies STU',
+    duration: 'Jun 2023 - Present',
+    description: [
+      'Worked as a frontend developer on a project aimed at building a digital library for students across all faculties of STU',
+      'Initially focused on fixing visual and functional bugs in Angular and later implemented new features and adjusted API calls to new backend endpoints',
+      'Proposed and led a full transition from Angular to React for better flexibility, including a complete redesign of the frontend',
+      'In React, implemented custom hooks for RESTful API, state management, authorization, authentication, performance optimization, component creation, UMAMI analytics integration and responsive design',
+      'Developed a GitHub library for reading and manipulating PDF documents using pdfjs-dist, with a focus on creating intuitive UX for document visualization and manipulation in the digital library',
+    ],
   },
 ];

@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <div className='my-20 bg-black shadow-[0_0_20px_10px_rgba(0,0,0,0.5)]'>
+      <div className='bg-black shadow-[0_0_20px_10px_rgba(0,0,0,0.5)]'>
         <Skills />
       </div>
       <Experiences />
