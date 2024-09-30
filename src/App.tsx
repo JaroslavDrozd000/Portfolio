@@ -1,5 +1,12 @@
-import Header from './components/header/Header';
-import { About, Contact, Experiences, Hero, Projects, Tech } from './sections';
+import { Header } from './components';
+import {
+  About,
+  Contact,
+  Experiences,
+  Hero,
+  Projects,
+  Skills,
+} from './sections';
 
 function App() {
   return (
@@ -7,8 +14,8 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <div className='bg-neutral-100'>
-        <Tech />
+      <div className='my-20 bg-black shadow-[0_0_20px_10px_rgba(0,0,0,0.5)]'>
+        <Skills />
       </div>
       <Experiences />
       <div className='bg-neutral-100'>

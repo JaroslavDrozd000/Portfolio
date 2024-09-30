@@ -4,7 +4,7 @@ const About = () => {
       <h1 id='about' className='section-h1'>
         Introduction
       </h1>
-      <div className='flex max-md:flex-col gap-5 justify-center'>
+      <div className='flex max-md:flex-col gap-5 max-md:items-center justify-center'>
         <p className='max-w-96 text-size'>
           Hi, my name is Jaroslav Drozd, I am a front-end developer from
           Slovakia with a Bachelor's degree in Computer Science from FIIT STU in
@@ -16,7 +16,7 @@ const About = () => {
           technologies.
         </p>
         <div className='max-w-96'>
-          <span className='text-primary text-[1.5rem] font-bold font-serif'>
+          <span className='text-secondary text-[1.5rem] font-bold font-serif'>
             Education
           </span>
           <p className='text-neutral-500 text-size'>Bachelor's Degree</p>
