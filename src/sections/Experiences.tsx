@@ -9,15 +9,18 @@ const Experiences = () => {
           key={index}
           className='flex gap-5 w-full text-size max-w-2xl mx-auto mb-10'
         >
+          {/* Left side */}
           <div className='max-sm:hidden flex flex-col items-center gap-5'>
             <img
-              className='min-w-20 w-20 rounded-full border-2 border-secondary'
+              className='min-w-20 w-20 rounded-full border-4 border-secondary'
               src={exp.img}
               alt='FIIT Logo'
             />
 
-            <div className='flex flex-1 border-l-2 border-secondary'></div>
+            <div className='flex flex-1 border-x-2 rounded-full border-secondary'></div>
           </div>
+
+          {/* Job side */}
           <div className='flex flex-col px-5'>
             <p className='text-secondary font-extrabold heading-size font-serif'>
               {exp.job}

@@ -18,9 +18,12 @@ const Skills = () => {
               {tech.skills.map((skill, index) => (
                 <img
                   key={index}
-                  className={`w-12 rounded-lg overflow-hidden`}
+                  className={`w-12 rounded-lg overflow-hidden animate-jump`}
                   src={skill}
                   alt='Skill'
+                  style={{
+                    animationDuration: (Math.random() * 5 + 2).toFixed(0) + 's',
+                  }}
                 />
               ))}
             </div>
