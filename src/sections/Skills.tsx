@@ -18,7 +18,7 @@ const Skills = () => {
               {tech.skills.map((skill, index) => (
                 <img
                   key={index}
-                  className={`w-16 rounded-lg overflow-hidden`}
+                  className={`w-12 rounded-lg overflow-hidden`}
                   src={skill}
                   alt='Skill'
                 />

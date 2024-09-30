@@ -1,32 +1,61 @@
+import fiitLogo from '../assets/fiit.png';
+
 const Experiences = () => {
   return (
     <section id='exp' className='section-container'>
       <h1 className='section-h1'>Experiences</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quis
-        delectus fugiat, odio, beatae voluptatibus accusantium ex cupiditate
-        maiores quod veniam saepe tempore, illo laudantium libero numquam?
-        Temporibus accusantium beatae minus aliquid aut architecto, illo dolor
-        nihil libero numquam deleniti repudiandae ea voluptas eius corporis
-        adipisci delectus maiores, consequatur voluptatum ipsa laborum non id?
-        Molestiae rerum modi dicta nostrum distinctio, pariatur voluptatibus
-        officia voluptatum. Sint, vitae aspernatur placeat animi facilis ducimus
-        facere. Maxime error inventore provident iusto similique ut sequi magnam
-        expedita labore atque ipsam delectus earum laboriosam ex, velit debitis
-        modi pariatur corrupti fugit vero fugiat est illum dolore aliquid.
-        Velit, corporis. Quis quos dignissimos provident, laboriosam, ex
-        consectetur dolorem eos, in fuga quas ut amet vel odio unde explicabo
-        sit praesentium voluptatum. Rerum explicabo aliquid quos. Accusamus
-        fugit sunt veritatis quidem beatae sit esse earum nostrum libero
-        tempore. Voluptatibus quasi sed nobis, debitis dignissimos totam
-        accusantium, libero repudiandae sit aspernatur doloremque. Omnis ut
-        repudiandae quisquam impedit doloribus, hic fuga asperiores repellendus,
-        voluptatem tempora totam magni possimus sequi eius amet! Adipisci
-        dolorum fuga sunt voluptatem animi ipsa autem illo nulla. Nobis ullam
-        molestias nulla! Molestiae repudiandae, inventore amet eveniet velit
-        laudantium, blanditiis sed ullam nemo aspernatur iusto, laborum pariatur
-        quaerat. odio?
-      </p>
+      <div className='flex gap-5 w-full text-size max-w-2xl mx-auto'>
+        <div className='max-sm:hidden flex flex-col items-center gap-5'>
+          <img
+            className='min-w-20 w-20 rounded-full border-2 border-secondary'
+            src={fiitLogo}
+            alt='FIIT Logo'
+          />
+
+          <div className='flex flex-1 border-l-2 border-secondary'></div>
+        </div>
+        <div className='flex flex-col px-5'>
+          <p className='text-secondary font-extrabold heading-size font-serif'>
+            Frontend Developer
+          </p>
+          <p className='font-semibold'>
+            Faculty of Informatics and Information Technologies STU
+          </p>
+          <span className='text-neutral-400 mb-5 text-[1rem]'>
+            Jun 2023 - Present
+          </span>
+          <ul className='flex flex-col gap-4 text-sm list-disc '>
+            <li>
+              Worked as a frontend developer on a project aimed at building a
+              digital library for students across all faculties of STU
+            </li>
+
+            <li>
+              Initially focused on fixing visual and functional bugs in Angular
+              and later implemented new features and adjusted API calls to new
+              backend endpoints
+            </li>
+
+            <li>
+              Proposed and led a full transition from Angular to React for
+              better flexibility, including a complete redesign of the frontend
+            </li>
+
+            <li>
+              In React, implemented custom hooks for RESTful API, state
+              management, authorization, authentication, performance
+              optimization, component creation, UMAMI analytics integration and
+              responsive design
+            </li>
+
+            <li>
+              Developed a GitHub library for reading and manipulating PDF
+              documents using pdfjs-dist, with a focus on creating intuitive UX
+              for document visualization and manipulation in the digital library
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };

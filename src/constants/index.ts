@@ -1,3 +1,3 @@
-import { navLinks, techList } from './constants';
+import { navLinks, techList, contactList } from './constants';
 
-export { navLinks, techList };
+export { navLinks, techList, contactList };

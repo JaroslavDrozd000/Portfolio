@@ -46,6 +46,9 @@ body,
   .section-h1 {
     @apply text-4xl max-sm:text-2xl text-primary font-serif font-extrabold mb-10;
   }
+  .heading-size {
+    @apply text-2xl text-xl;
+  }
   .text-size {
     @apply text-lg max-sm:text-sm;
   }
